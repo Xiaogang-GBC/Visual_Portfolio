@@ -16,14 +16,35 @@
             line-height: 1.6;
             background-color: #f5f5f5;
         }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
+         .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
             padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -89,23 +110,16 @@
     </style>
 </head>
 <body>
-    <div style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: 'Arial', sans-serif;">
-    <header style="text-align: center;">
-        <h1 style="color: #2C3E50; font-size: 2.5em; margin-bottom: 30px; border-bottom: 3px solid #3498DB; padding-bottom: 15px;">
-            Xiaogang Dong's Journey in Data Visualization
-        </h1>
+     <div class="container">
+        <header class="header">
+            <h1 class="title">Xiaogang Dong's Journey in Data Visualization</h1>
+        </header>
         
-        <div style="font-size: 1.1em; line-height: 1.6; color: #34495E; margin: 25px 0;">
-            <p style="margin-bottom: 20px;">
-                Hello! My name is Sean Dong, and I am set to graduate from the MBAI master's program at Ontario Tech University in August 2025. My studies focus on Data Analytics and Artificial Intelligence, building on a postgraduate program in Blockchain from George Brown College.
-            </p>
-            
-            <p>
-                As a graduate student, I am deeply passionate about Data Visualization. I believe the ability to creatively visualize data and craft compelling narratives is a vital skill in today's business world. Here, I present six standout visualization projects, each demonstrating my unique skills in transforming complex datasets into engaging and impactful stories for diverse audiences.
-            </p>
+        <div class="description">
+            Hello! My name is Sean Dong, and I am set to graduate from the MBAI master's program at Ontario Tech University in August 2025. My studies focus on Data Analytics and Artificial Intelligence, building on a postgraduate program in Blockchain from George Brown College.
+            <br/>
+             As a graduate student, I am deeply passionate about Data Visualization. I believe the ability to creatively visualize data and craft compelling narratives is a vital skill in today's business world. Here, I present six standout visualization projects, each demonstrating my unique skills in transforming complex datasets into engaging and impactful stories for diverse audiences.
         </div>
-    </header>
-</div>
 
     <main class="portfolio-grid">
         <!-- Project 1 -->
